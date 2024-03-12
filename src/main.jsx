@@ -10,9 +10,13 @@ import { MaterialProvider } from './pages/Materiales/hooks/MaterialContext.jsx'
 import { SuajeProvider } from './pages/Suajes/hooks/SuajeContext.jsx'
 import { NotasProvider } from './pages/Notas/hooks/NotasContext.jsx'
 import { TerminadosProvider } from './pages/Terminados/hooks/TerminadosContext.jsx'
+import CrudPrueba from './CrudPrueba.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <CrudPrueba />
+    {
+      /*
     <BrowserRouter>
       <AuthProvider>
         <AxiosProvider>
@@ -30,5 +34,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </AxiosProvider>
       </AuthProvider>
     </BrowserRouter>
+       */
+    }
   </React.StrictMode>,
 )
